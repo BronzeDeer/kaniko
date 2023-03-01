@@ -40,7 +40,7 @@ chmod +x minikube
 sudo mv minikube /usr/local/bin/
 
 # Minikube needs cri-dockerd to run clusters 1.24+
-CRI_DOCKERD_VERSION="${CRI_DOCKERD_VERSION:-0.2.3}"
+CRI_DOCKERD_VERSION="${CRI_DOCKERD_VERSION:-0.3.1}"
 CRI_DOCKERD_BINARY_URL="https://github.com/Mirantis/cri-dockerd/releases/download/v${CRI_DOCKERD_VERSION}/cri-dockerd-${CRI_DOCKERD_VERSION}.amd64.tgz"
 
 curl -Lo cri-dockerd.tgz $CRI_DOCKERD_BINARY_URL
